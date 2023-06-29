@@ -1,0 +1,230 @@
+         w __deregister_frame_info
+         w __register_frame_info
+00100000 A __start__
+00100000 T _start
+00100008 T __service_ptr
+0010000c T __apt_appid
+00100010 T __heap_size
+00100014 T __linear_heap_size
+00100018 T __system_arglist
+0010001c T __system_runflags
+00100020 t startup
+00100058 t ClearMem
+0010006c t ClrLoop
+00100094 T _init
+001000ac T __aeabi_ldivmod
+00100180 00000004 W __aeabi_idiv0
+00100180 00000004 W __aeabi_ldiv0
+00100184 t __do_global_dtors_aux
+001001c4 t frame_dummy
+001001f0 00000030 T ExHeaderInfoHeap_Init
+00100220 00000078 T ExHeaderInfoHeap_New
+00100298 0000003c T ExHeaderInfoHeap_Delete
+001002d4 00000004 t panic.isra.0
+001002d8 00000054 t LaunchFirmAsync
+0010032c 00000024 T mapFirmlaunchParameters
+00100350 00000020 T GetFirmlaunchParams
+00100370 0000004c T SetFirmlaunchParams
+001003bc 00000068 T LaunchFirm
+00100424 00000004 t panic.isra.0
+00100428 000000d8 T registerProgram
+00100500 00000068 T listDependencies
+00100568 00000038 T getAndListDependencies
+001005a0 0000019c T listMergeUniqueDependencies
+00100740 000000c0 T GetTitleExHeaderFlags
+00100800 00000084 T GetCurrentAppInfo
+00100884 00000004 t panic.isra.0
+00100888 0000025c t loadWithoutDependencies
+00100ae4 00000224 t loadWithDependencies
+00100d08 00000244 t launchTitleImpl.part.0
+00100f4c 000000dc t launchTitleImplWrapper
+00101028 0000002c t LaunchTitleAsync
+00101054 000001ec T LaunchTitle
+00101240 00000120 T LaunchTitleUpdate
+00101360 00000074 T LaunchApp
+001013d4 0000013c T RunQueuedProcess
+00101510 000000cc T LaunchAppDebug
+001015dc 00000058 T autolaunchSysmodules
+00101634 00000018 T DebugNextApplicationByForce
+0010164c 0000007c T LaunchTitleDebug
+001016c8 000000a4 T readLumaConfig
+0010176c 0000002c T hasKExt
+00101798 00000028 T getStolenSystemMemRegionSize
+001017c0 00000070 T isTitleLaunchPrevented
+00101830 00000004 t handleRestartHbAppNotification
+00101834 00000004 t panic.isra.0
+00101838 00000008 T __wrap_exit
+00101840 00000080 T initSystem
+001018c0 000000b0 T main
+00101970 00000004 t panic.isra.0
+00101974 000000d0 T Manager_Init
+00101a48 00000178 T Manager_RegisterKips
+00101bc0 00000078 T UnregisterProcess
+00101c38 00000010 t _thread_begin
+00101c48 00000038 T MyThread_Create
+00101c80 000003a8 T pmAppHandleCommands
+00102028 000001d8 T pmDbgHandleCommands
+00102200 00000004 t panic.isra.0
+00102204 00000034 T ProcessList_FindProcessById
+00102238 00000034 T ProcessList_FindProcessByHandle
+0010226c 00000048 T ProcessList_FindProcessByTitleId
+001022b4 00000028 T ProcessData_Notify
+001022dc 00000040 T ProcessData_SendTerminationNotification
+0010231c 0000002c T ProcessData_Incref
+00102348 0000005c T ProcessList_New
+001023a4 00000028 T ProcessList_Delete
+001023cc 00000004 t panic.isra.0
+001023d0 000002b8 T processMonitor
+00102688 00000004 t panic.isra.0
+0010268c 00000140 T initializeReslimits
+001027cc 00000058 T setAppMemLimit
+00102824 00000054 T resetAppMemLimit
+00102878 00000064 T setAppCpuTimeLimit
+001028e0 00000170 T setAppCpuTimeLimitAndSchedModeFromDescriptor
+00102a50 000000b8 T SetAppResourceLimit
+00102b08 000000ac T GetAppResourceLimit
+00102bb4 0000059c T ServiceManager_Run
+00103150 00000038 T TaskRunner_Init
+00103188 00000048 T TaskRunner_RunTask
+001031d0 0000004c T TaskRunner_HandleTasks
+0010321c 00000004 t panic.isra.0
+00103220 0000010c t TerminateProcessOrTitle
+0010332c 0000011c t commitPendingTerminations
+00103448 000000f8 t terminateUnusedDependencies
+00103540 00000078 t terminateProcessImpl.isra.0
+001035b8 0000016c t ChainloadHomebrewDirtyAsync
+00103724 0000012c t TerminateProcessOrTitleAsync
+00103850 00000058 T forceMountSdCard
+001038a8 00000040 T listAndTerminateDependencies
+001038e8 000000a4 T TerminateApplication
+0010398c 0000001c T TerminateTitle
+001039a8 0000001c T TerminateProcess
+001039c8 00000364 T terminateAllProcesses
+00103d2c 0000002c t PrepareForRebootAsync
+00103d58 00000060 T PrepareForReboot
+00103db8 00000068 T ChainloadHomebrewDirty
+00103e20 0000000c T __sync_init
+00103e2c 000000ac T LightLock_Lock
+00103ed8 00000024 T RecursiveLock_Init
+00103efc 00000030 T RecursiveLock_Lock
+00103f2c 00000054 T RecursiveLock_Unlock
+00103f80 00000040 T LightEvent_Init
+00103fc0 000000c8 T LightEvent_Signal
+00104088 000000a0 T LightEvent_Wait
+00104128 0000012c T srvInit
+00104254 00000058 T srvExit
+001042ac 0000000c T srvGetSessionHandle
+001042b8 00000060 T srvEnableNotification
+00104318 00000090 T srvRegisterService
+001043a8 00000058 T srvUnregisterService
+00104400 000000a0 T srvGetServiceHandleDirect
+001044a0 00000038 T srvGetServiceHandle
+001044d8 00000034 T srvSubscribe
+0010450c 00000034 T srvUnsubscribe
+00104540 00000060 T srvReceiveNotification
+001045a0 00000038 T srvPublishToSubscriber
+001045d8 00000074 T loaderInit
+0010464c 00000040 T LOADER_LoadProcess
+0010468c 0000007c T LOADER_RegisterProgram
+00104708 00000038 T LOADER_UnregisterProgram
+00104740 00000058 T LOADER_GetProgramInfo
+00104798 00000070 T srvPmExit
+00104808 000000b8 T srvPmInit
+001048c0 0000000c T srvPmGetSessionHandle
+001048cc 00000060 T SRVPM_PublishToProcess
+0010492c 0000006c T SRVPM_RegisterProcess
+00104998 00000058 T SRVPM_UnregisterProcess
+001049f0 00000074 T fsRegInit
+00104a64 000000a0 T FSREG_Register
+00104b04 00000034 T FSREG_Unregister
+00104b38 000000cc T fsInit
+00104c04 00000084 T fsMakePath
+00104c88 00000094 T FSUSER_OpenArchive
+00104d1c T svcExitProcess
+00104d24 T svcSetProcessAffinityMask
+00104d2c T svcSetProcessIdealProcessor
+00104d34 T svcCreateThread
+00104d54 T svcExitThread
+00104d5c T svcSleepThread
+00104d64 T svcRun
+00104d88 T svcCreateEvent
+00104d9c T svcSignalEvent
+00104da4 T svcClearEvent
+00104dac T svcCreateAddressArbiter
+00104dc0 T svcArbitrateAddressNoTimeout
+00104dc8 T svcCloseHandle
+00104dd0 T svcWaitSynchronization
+00104dd8 T svcWaitSynchronizationN
+00104e00 T svcDuplicateHandle
+00104e14 T svcGetSystemTick
+00104e1c T svcGetSystemInfo
+00104e34 T svcConnectToPort
+00104e48 T svcSendSyncRequest
+00104e50 T svcOpenProcess
+00104e64 T svcGetProcessId
+00104e78 T svcGetResourceLimitLimitValues
+00104e80 T svcCreatePort
+00104ea0 T svcAcceptSession
+00104eb8 T svcReplyAndReceive
+00104ed0 T svcDebugActiveProcess
+00104ee4 T svcTerminateProcess
+00104eec T svcSetProcessResourceLimits
+00104ef4 T svcCreateResourceLimit
+00104f08 T svcSetResourceLimitValues
+00104f10 T svcKernelSetState
+00104f18 00000084 W envGetHandle
+00104f9c 00000120 T __udivmoddi4
+001050bc 000000f4 T memset
+001051b0 00000090 T strlen
+00105240 000000c4 T strncpy
+00105304 00000048 T strnlen
+0010534c 0000011c T memcpy
+00105468 T _fini
+00106000 00000010 r CSWTCH.44
+00106010 00000010 r notifications
+00106030 00000030 r services
+00106060 00000020 r storageInfo.0
+00106080 00000028 r g_reslimitInitOrder
+001060d0 R __tdata_align
+001060d4 r __EH_FRAME_BEGIN__
+001060d4 R __exidx_end
+001060d4 R __exidx_start
+00107000 00000140 d g_n3dsReslimitValues
+00107140 00000140 d g_o3dsReslimitValues
+00107280 d __frame_dummy_init_array_entry
+00107280 D __tdata_lma
+00107280 D __tdata_lma_end
+00107284 d __do_global_dtors_aux_fini_array_entry
+00107288 D __bss_start__
+00107288 b completed.1
+0010728c b object.0
+001072a4 00000004 b g_headNode
+001072a8 00000001 b g_debugNextApplication
+001072ac 00000004 B bootConfig
+001072b0 00000004 B multiConfig
+001072b4 00000004 B config
+001072b8 00002000 b threadStacks
+001092b8 00001800 b exheaderInfoBuffer
+0010aab8 00000c00 b processDataBuffer
+0010b6b8 00000014 b taskRunnerThread
+0010b6cc 00000014 b processMonitorThread
+0010b6e0 00000040 B g_manager
+0010b720 00000004 b g_defaultAppMemLimit
+0010b724 00000058 B g_taskRunner
+0010b77c 00000004 b arbiter
+0010b780 00000004 b srvRefCount
+0010b784 00000004 b srvHandle
+0010b788 00000004 b loaderRefCount
+0010b78c 00000004 b loaderHandle
+0010b790 00000004 b srvPmRefCount
+0010b794 00000004 b srvPmHandle
+0010b798 00000004 b fsRegRefCount
+0010b79c 00000004 b fsRegHandle
+0010b7a0 00000004 b fsuRefCount
+0010b7a4 00000004 b fsuHandle
+0010b7a8 00000004 B __system_argv
+0010b7ac 00000004 B __system_argc
+0010b7b0 B __bss_end__
+0010b7b0 A __end__
+0010b7b0 B __tls_end
+0010b7b0 B __tls_start

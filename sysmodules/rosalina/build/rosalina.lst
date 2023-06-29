@@ -1,0 +1,829 @@
+         w __deregister_frame_info
+         w __register_frame_info
+00000000 a shift
+00000000 a shift
+00100000 A __start__
+14000000 T _start
+14000008 T __service_ptr
+1400000c T __apt_appid
+14000010 T __heap_size
+14000014 T __linear_heap_size
+14000018 T __system_arglist
+1400001c T __system_runflags
+14000020 t startup
+14000058 t ClearMem
+1400006c t ClrLoop
+14000094 T _init
+140000ac t .udivsi3_skip_div0_test
+140000ac T __aeabi_uidiv
+140000ac 000001ec T __udivsi3
+14000298 00000020 T __aeabi_uidivmod
+140002b8 T __aeabi_idiv
+140002b8 00000220 T __divsi3
+140002c0 t .divsi3_skip_div0_test
+140004d8 00000020 T __aeabi_idivmod
+140004f8 00000004 W __aeabi_idiv0
+140004f8 00000004 W __aeabi_ldiv0
+140004fc T __aeabi_drsub
+14000504 000002b0 T __aeabi_dsub
+14000504 000002b0 T __subdf3
+14000508 000002ac T __adddf3
+14000508 000002ac T __aeabi_dadd
+140007b4 00000024 T __aeabi_ui2d
+140007b4 00000024 T __floatunsidf
+140007d8 00000028 T __aeabi_i2d
+140007d8 00000028 T __floatsidf
+14000800 00000048 T __aeabi_f2d
+14000800 00000048 T __extendsfdf2
+14000848 00000074 T __aeabi_ul2d
+14000848 00000074 T __floatundidf
+1400085c 00000060 T __aeabi_l2d
+1400085c 00000060 T __floatdidf
+140008bc T __aeabi_ldivmod
+14000990 T __aeabi_uldivmod
+140009e8 00000390 T strcmp
+14000d70 t __do_global_dtors_aux
+14000db0 t frame_dummy
+14000ddc 0000003c t _thread_begin
+14000e18 0000001c T MyThread_Create
+14000e34 00000038 T MyThread_Join
+14000e6c 00000008 T bootdiagCreateThread
+14000e74 00000304 t Draw_ConvertFrameBufferLinesKernel
+14001178 0000000c T Draw_Init
+14001184 0000000c T Draw_Lock
+14001190 0000000c T Draw_Unlock
+1400119c 000000cc T Draw_DrawCharacter
+14001268 00000204 T Draw_DrawString
+1400146c 00000050 T Draw_DrawFormattedString
+140014bc 00000014 T Draw_ClearFramebuffer
+140014d0 00000078 T Draw_AllocateFramebufferCache
+14001548 000000a8 T Draw_AllocateFramebufferCacheForScreenshot
+140015f0 0000005c T Draw_FreeFramebufferCache
+1400164c 00000010 T Draw_GetFramebufferCache
+1400165c 00000010 T Draw_GetFramebufferCacheSize
+1400166c 0000011c T Draw_SetupFramebuffer
+14001788 000000a0 T Draw_RestoreFramebuffer
+14001828 00000018 T Draw_FlushFramebuffer
+14001840 00000074 T Draw_GetCurrentFramebufferAddress
+140018b4 00000044 T Draw_GetCurrentScreenInfo
+140018f8 00000078 T Draw_CreateBitmapHeader
+14001970 00000040 T Draw_ConvertFrameBufferLines
+140019b0 00000128 t ERRF_FormatGenericInfo
+14001ad8 0000037c t ERRF_FormatError
+14001e54 0000004c T errDispCreateThread
+14001ea0 00000328 T ERRF_HandleCommands
+140021c8 00000154 T errDispThreadMain
+1400231c 000001fc t processNumber
+14002518 00000470 T vsprintf
+14002988 00000028 T sprintf
+140029b0 00000064 T GDB_InitializeContext
+14002a14 00000128 T GDB_AttachToProcess
+14002b3c 000001d8 T GDB_DetachFromProcess
+14002d14 00000060 T GDB_CreateProcess
+14002d74 00000004 T GDB_HandleUnsupported
+14002d78 00000024 T GDB_HandleEnableExtendedMode
+14002d9c 00000070 T IFile_Open
+14002e0c 00000058 T IFile_OpenFromArchive
+14002e64 00000008 T IFile_Close
+14002e6c 00000024 T IFile_GetSize
+14002e90 00000028 T IFile_SetSize
+14002eb8 00000098 T IFile_Read
+14002f50 00000094 T IFile_Write
+14002fe8 000002b0 T inputRedirectionThreadMain
+14003298 00000288 t InputRedirection_DoUndoHidPatches
+14003520 0000004c T inputRedirectionCreateThread
+1400356c 00000474 T InputRedirection_DoOrUndoPatches
+140039e0 00000064 T InputRedirection_Disable
+14003a44 0000006c T LumaConfig_ConvertComboToString
+14003ab0 00000594 T LumaConfig_SaveSettings
+14004044 00000048 t readCalibration
+1400408c 00000018 T getMinLuminancePreset
+140040a4 00000020 T getMaxLuminancePreset
+140040c4 000000dc T getCurrentLuminance
+140041a0 00000004 t handleTermNotification
+140041a8 000000a4 t handlePreTermNotification
+1400424c 00000014 t handleNextApplicationDebuggedByForce
+14004260 00000094 t handleSleepNotification
+140042f4 0000003c t handleShellNotification
+14004330 0000000c T __wrap_exit
+1400433c 00000198 T initSystem
+140044d4 000000b0 T main
+14004584 000000b4 T memsearch
+14004638 00000110 T hexItoa
+14004748 000001cc T xstrtoul
+14004914 00000228 T xstrtoull
+14004b3c 0000004c t scanHeldKeys
+14004b88 00000028 t isServiceUsable
+14004bb0 00000028 t menuItemIsHidden.isra.0
+14004bd8 00000008 T hidShouldUseIrrst
+14004be0 000000b4 T waitInputWithTimeout
+14004c94 000000b8 T waitInputWithTimeoutEx
+14004d4c 00000008 T waitInput
+14004d54 00000108 T waitComboWithTimeout
+14004e5c 00000008 T waitCombo
+14004e64 00000010 T menuCheckN3ds
+14004e74 00000024 T menuCountItems
+14004e98 00000440 t menuDraw
+140052d8 0000004c T menuCreateThread
+14005324 00000090 T menuEnter
+140053b8 00000054 T menuLeave
+1400540c 0000023c T menuShow
+14005648 00000138 T menuThreadMain
+14005780 00000030 T rosalinaMenuShouldShowDebugInfo
+140057b0 000000bc T RosalinaMenu_SaveSettings
+1400586c 000000e4 T RosalinaMenu_ShowCredits
+14005950 00000230 T RosalinaMenu_ShowDebugInfo
+14005b80 0000009c T RosalinaMenu_Reboot
+14005c1c 0000021c T RosalinaMenu_ChangeScreenBrightness
+14005e38 000000a8 T RosalinaMenu_PowerOff
+14005ee0 00000180 t RosalinaMenu_WriteScreenshot
+14006060 00000458 T RosalinaMenu_TakeScreenshot
+140064b8 0000002c t SOCU_Shutdown
+140064e4 00000078 T miniSocLockState
+1400655c 00000054 T miniSocUnlockState
+140065b0 000001d8 T miniSocInit
+14006788 00000094 T miniSocExitDirect
+1400681c 0000004c T miniSocExit
+14006868 000000a8 T socSocket
+14006910 000000c4 T socBind
+140069d4 00000054 T socListen
+14006a28 000000ec T socAccept
+14006b14 000000c8 T socConnect
+14006bdc 000000d0 T socPoll
+14006cac 00000054 T socClose
+14006d00 00000070 T socSetsockopt
+14006d70 00000040 T socGethostid
+14006db0 000001c8 T socRecvfrom
+14006f78 0000019c T socSendto
+14007114 000001a8 t ntpSetTimeDateImpl
+140072c0 000001c4 T ntpGetTimeStamp
+14007484 00000018 T ntpSetTimeDate
+1400749c 00000038 T ntpNullifyUserTimeOffset
+140074d4 00000064 T PMDBG_GetCurrentAppInfo
+14007538 00000030 T PMDBG_DebugNextApplicationByForce
+14007568 00000054 T PMDBG_LaunchTitleDebug
+140075bc 000000ac T OpenProcessByName
+14007668 000000e0 T OperateOnProcessByName
+14007748 00000440 T ServiceManager_Run
+14007b88 00000110 T handleShellOpened
+14007c98 00000098 t server_close_ctx
+14007d30 00000044 t server_should_exit.isra.0
+14007d74 00000048 T server_init
+14007dc0 000001e8 T server_bind
+14007fa8 00000090 T server_kill_connections
+14008038 0000038c T server_run
+140083c4 00000054 T server_finalize
+14008418 00000004 t taskRunnerNoOpFunction
+1400841c 00000040 T TaskRunner_HandleTasks
+1400845c 00000038 T TaskRunner_Init
+14008494 00000044 T taskRunnerCreateThread
+140084d8 00000048 T TaskRunner_RunTask
+14008520 00000024 T TaskRunner_Terminate
+14008544 00000050 T formatMemoryPermission
+14008594 0000001c T formatUserMemoryState
+140085b0 00000138 T formatMemoryMapOfProcess
+140086e8 000001b0 T dateTimeToString
+14008898 000001a0 T floatToString
+14008a38 00000080 T GDB_FindClosestBreakpointSlot
+14008ab8 00000054 T GDB_GetBreakpointInstruction
+14008b0c 000001bc T GDB_AddBreakpoint
+14008cc8 0000003c T GDB_DisableBreakpointById
+14008d04 000000b4 T GDB_RemoveBreakpoint
+14008db8 00000088 t GDB_DetachImmediatelyExtended
+14008e40 00000184 t GDB_ParseCommonThreadInfo.isra.0
+14008fc4 0000009c T GDB_HandleRestart
+14009060 0000009c T GDB_HandleDetach
+140090fc 00000034 T GDB_HandleKill
+14009130 0000009c T GDB_HandleVerboseKill
+140091cc 0000002c T GDB_HandleBreak
+140091f8 00000030 T GDB_ContinueExecution
+14009228 000000ec T GDB_HandleContinue
+14009314 00000110 T GDB_HandleVerboseContinue
+14009424 00000204 T GDB_PreprocessDebugEvent
+14009628 00000498 T GDB_SendStopReply
+14009ac0 000001f8 T GDB_HandleVerboseRun
+14009cb8 000000ac T GDB_HandleVerboseAttach
+14009d64 000000a8 T GDB_HandleGetStopReason
+14009e0c 00000154 T GDB_HandleDebugEvents
+14009f60 00000070 T GDB_FetchPackedHioRequest
+14009fd0 00000010 T GDB_IsHioInProgress
+14009fe0 00000138 T GDB_SendCurrentHioRequest
+1400a118 00000178 T GDB_HandleHioReply
+1400a290 00000008 t k_memcpy_no_interrupt
+1400a298 00000114 T GDB_ReadTargetMemoryInPage
+1400a3ac 0000014c T GDB_WriteTargetMemoryInPage
+1400a4f8 00000064 T GDB_ReadTargetMemory
+1400a55c 00000064 T GDB_WriteTargetMemory
+1400a5c0 000000b0 T GDB_SendMemory
+1400a670 00000034 T GDB_WriteMemory
+1400a6a4 00000140 T GDB_SearchMemory
+1400a7e4 00000058 T GDB_HandleReadMemory
+1400a83c 00000098 T GDB_HandleWriteMemory
+1400a8d4 000000a4 T GDB_HandleWriteMemoryRaw
+1400a978 00000110 T GDB_HandleQuerySearchMemory
+1400aa88 000001f0 T GDB_RunMonitor
+1400ac78 00000048 t GDB_DecodeHexDigit
+1400acc0 00000038 t GDB_DoSendPacket
+1400acf8 00000024 T GDB_ComputeChecksum
+1400ad1c 00000044 T GDB_EncodeHex
+1400ad60 00000088 T GDB_DecodeHex
+1400ade8 00000098 T GDB_EscapeBinaryData
+1400ae80 00000038 T GDB_UnescapeBinaryData
+1400aeb8 000000b0 T GDB_ParseIntegerList
+1400af68 000000b0 T GDB_ParseIntegerList64
+1400b018 00000024 T GDB_ParseHexIntegerList
+1400b03c 00000024 T GDB_ParseHexIntegerList64
+1400b060 0000027c T GDB_ReceivePacket
+1400b2dc 0000006c T GDB_SendPacket
+1400b348 00000058 T GDB_SendFormattedPacket
+1400b3a0 0000007c T GDB_SendHexPacket
+1400b41c 000000a4 T GDB_SendStreamData
+1400b4c0 000000a0 T GDB_SendDebugString
+1400b560 00000010 T GDB_ReplyEmpty
+1400b570 00000010 T GDB_ReplyOk
+1400b580 00000048 T GDB_ReplyErrno
+1400b5c8 000000c4 t GDB_HandleQuery
+1400b68c 00000088 T GDB_HandleQuerySupported
+1400b714 0000000c T GDB_HandleQueryStartNoAckMode
+1400b720 00000024 T GDB_HandleQueryAttached
+1400b744 00000138 T GDB_HandleQueryCatchSyscalls
+1400b87c 00000008 T GDB_HandleReadQuery
+1400b884 00000008 T GDB_HandleWriteQuery
+1400b88c 0000005c t GDB_ConvertRegisterNumber
+1400b8e8 00000060 T GDB_HandleReadRegisters
+1400b948 00000070 T GDB_HandleWriteRegisters
+1400b9b8 000000ec T GDB_HandleReadRegister
+1400baa4 00000160 T GDB_HandleWriteRegister
+1400bc04 00000028 t GDB_SkipSpaces
+1400bc2c 00000274 T GDB_HandleRemoteCommandSyncRequestInfo
+1400bea0 00000058 T GDB_HandleRemoteCommandToggleExternalMemoryAccess
+1400bef8 000001b4 T GDB_HandleRemoteCommandTranslateHandle
+1400c0ac 00000128 t GDB_HandleRemoteCommandGetMmuConfig.part.0
+1400c1d4 0000001c T GDB_HandleRemoteCommandGetMmuConfig
+1400c1f0 00000060 T GDB_HandleRemoteCommandGetMemRegions
+1400c250 00000034 T GDB_HandleRemoteCommandFlushCaches
+1400c284 000000f4 T GDB_HandleQueryRcmd
+1400c378 00000004 T GDB_ReleaseClient
+1400c37c 0000004c T GDB_AcceptClient
+1400c3c8 00000128 T GDB_CloseClient
+1400c4f0 00000130 T GDB_DoPacket
+1400c620 000000a4 T GDB_InitializeServer
+1400c6c4 0000006c T GDB_FinalizeServer
+1400c730 00000024 T GDB_IncrementServerReferenceCount
+1400c754 0000002c T GDB_DecrementServerReferenceCount
+1400c780 0000006c T GDB_RunServer
+1400c7ec 0000002c T GDB_LockAllContexts
+1400c818 0000002c T GDB_UnlockAllContexts
+1400c848 00000180 T GDB_GetClient
+1400c9c8 00000108 T GDB_SelectAvailableContext
+1400cad0 00000060 T GDB_FindAllocatedContextByPid
+1400cb30 00000108 T GDB_HandleToggleStopPoint
+1400cc38 000000b8 t GDB_SendThreadData
+1400ccf0 0000006c t GDB_GetDynamicThreadPriority.isra.0
+1400cd5c 0000010c t thread_compare_func
+1400ce68 00000148 T GDB_ParseThreadId
+1400cfb0 00000040 T GDB_ParseDecodeSingleThreadId
+1400cff0 00000038 T GDB_EncodeThreadId
+1400d028 000000cc t GDB_GenerateThreadListData
+1400d0f4 00000058 T GDB_GetCurrentThreadFromList
+1400d14c 0000004c T GDB_GetCurrentThread
+1400d198 000000dc T GDB_HandleSetThreadId
+1400d274 00000080 T GDB_HandleIsThreadAlive
+1400d2f4 00000068 T GDB_HandleQueryCurrentThreadId
+1400d35c 00000028 T GDB_HandleQueryfThreadInfo
+1400d384 00000004 T GDB_HandleQuerysThreadInfo
+1400d388 00000038 T GDB_HandleQueryThreadEvents
+1400d3c0 000001d8 T GDB_HandleQueryThreadExtraInfo
+1400d598 00000088 T GDB_HandleQueryGetTLSAddr
+1400d620 000000b0 t GDB_TioConvertResult
+1400d6d0 00000034 t GDB_TioConvertFd
+1400d704 00000010 t GDB_TioReplyErrno
+1400d714 00000090 t GDB_MakeUtf16Path
+1400d7a4 00000270 T GDB_HandleTioOpen
+1400da14 0000009c T GDB_HandleTioClose
+1400dab0 00000120 T GDB_HandleTioRead
+1400dbd0 000000cc T GDB_HandleTioWrite
+1400dc9c 00000174 T GDB_HandleTioStat
+1400de10 000000d4 T GDB_HandleTioUnlink
+1400dee4 00000028 T GDB_HandleTioReadlink
+1400df0c 00000050 T GDB_HandleTioSetfs
+1400df5c 00000094 T GDB_HandleVerboseFile
+1400dff0 00000010 T GDB_HandleVerboseContinueSupported
+1400e000 000000a8 T GDB_HandleVerboseCommand
+1400e0a8 0000007c T GDB_ResetWatchpoints
+1400e124 000000fc T GDB_RemoveWatchpoint
+1400e220 0000005c T GDB_GetWatchpointKind
+1400e27c 00000148 T GDB_AddWatchpoint
+1400e3c4 000000c0 T GDB_HandleXferOsData
+1400e484 00000078 T GDB_HandleXferFeatures
+1400e4fc 000000f0 t GDB_HandleXferOsDataCfwVersion.part.0
+1400e5ec 0000001c T GDB_HandleXferOsDataCfwVersion
+1400e608 0000019c T GDB_HandleXferOsDataMemory
+1400e7a4 00000120 t GDB_HandleXferOsDataProcesses.part.0
+1400e8c4 0000001c T GDB_HandleXferOsDataProcesses
+1400e8e0 000001a4 T GDB_HandleQueryXfer
+1400ea84 0000001c t activeOffset
+1400eaa0 0000001c t activeData
+1400eabc 00000014 t activeStorage
+1400ead0 00000070 t Cheat_IsValidAddress
+1400eb40 00000098 t Cheat_Write16
+1400ebd8 00000098 t Cheat_Write32
+1400ec70 0000007c t Cheat_Write8
+1400ecec 000000a4 t Cheat_Read32
+1400ed90 00000088 t Cheat_Read8
+1400ee18 00000044 t Cheat_GetCurrentProcessAndTitleId.constprop.0
+1400ee5c 000000a4 t Cheat_Read16.constprop.0
+1400ef00 000018b8 t Cheat_MapMemoryAndApplyCheat
+140107b8 0000069c t Cheat_LoadCheatsIntoMemory
+14010e54 00000010 T Cheat_SeedRng
+14010e64 0000009c T Cheat_ApplyCheats
+14010f00 000003e4 T RosalinaMenu_Cheats
+140112e4 00000148 T DebuggerMenu_DebugNextApplicationByForce
+1401142c 00000028 T debuggerSocketThreadMain
+14011454 00000028 T debuggerDebugThreadMain
+1401147c 00000040 T debuggerCreateSocketThread
+140114bc 00000040 T debuggerCreateDebugThread
+14011500 000001d0 T DebuggerMenu_EnableDebugger
+140116d0 00000068 T debuggerFetchAndSetNextApplicationDebugHandleTask
+14011738 0000009c T debuggerDisable
+140117d8 000000e0 T DebuggerMenu_DisableDebugger
+140118b8 00000174 T MiscellaneousMenu_SwitchBoot3dsxTargetTitle
+14011a2c 0000013c T MiscellaneousMenu_ChangeMenuCombo
+14011b68 000002cc T MiscellaneousMenu_InputRedirection
+14011e34 000002d4 T MiscellaneousMenu_UpdateTimeDateNtp
+14012108 000000bc T MiscellaneousMenu_NullifyUserTimeOffset
+140121c4 000000cc T MiscellaneousMenu_DumpDspFirm
+14012290 000001bc t MiscellaneousMenu_DumpDspFirmCallback
+1401244c 000000a8 T N3DSMenu_UpdateStatus
+140124f4 00000048 T N3DSMenu_ChangeClockRate
+1401253c 00000048 T N3DSMenu_EnableDisableL2Cache
+14012584 00000028 t viewHeap.14
+140125ac 00000028 t viewCode.16
+140125d4 00000018 t clearMenu.18
+140125f0 00000114 T ProcessListMenu_FetchInfo
+14012704 00001278 T RosalinaMenu_ProcessList
+1401397c 000000b4 t ScreenFiltersMenu_ClampFilter
+14013a30 000001c0 t ScreenFiltersMenu_AdvancedConfigurationHelper
+14013bf0 00000098 t ScreenFilterMenu_CalculatePolynomialColorLutComponent.constprop.0
+14013c88 00000124 t ScreenFiltersMenu_ApplyColorSettings
+14013dac 00000030 t ScreenFiltersMenu_SetCct
+14013ddc 0000000c T ScreenFiltersMenu_SetDefault
+14013de8 0000000c T ScreenFiltersMenu_SetAquarium
+14013df4 0000000c T ScreenFiltersMenu_SetOvercastSky
+14013e00 0000000c T ScreenFiltersMenu_SetDaylight
+14013e0c 0000000c T ScreenFiltersMenu_SetFluorescent
+14013e18 0000000c T ScreenFiltersMenu_SetHalogen
+14013e24 0000000c T ScreenFiltersMenu_SetIncandescent
+14013e30 0000000c T ScreenFiltersMenu_SetWarmIncandescent
+14013e3c 0000000c T ScreenFiltersMenu_SetCandle
+14013e48 00000008 T ScreenFiltersMenu_SetEmber
+14013e50 0000015c t ScreenFiltersMenu_AdvancedConfigurationChangeValue
+14013fac 000001d8 T ScreenFiltersMenu_AdvancedConfiguration
+14014188 00000098 T ScreenFiltersMenu_RestoreSettings
+14014220 000002f8 T ScreenFiltersMenu_LoadConfig
+14014518 00000114 T SysConfigMenu_ToggleLEDs
+1401462c 00000130 T SysConfigMenu_TogglePowerButton
+1401475c 000001fc t SysConfigMenu_ForceWifiConnection
+14014958 00000184 T SysConfigMenu_ControlWifi
+14014adc 00000148 T SysConfigMenu_ToggleCardIfPower
+14014c24 000000a4 T SysConfigMenu_DisableForcedWifiConnection
+14014cc8 00000188 T SysConfigMenu_ToggleWireless
+14014e50 00000040 T SysConfigMenu_UpdateStatus
+14014e90 000000d8 T colorramp_get_white_point
+14014f68 T svcCustomBackdoor
+14014f70 T svcConvertVAToPA
+14014f78 T svcFlushEntireDataCache
+14014f80 T svcInvalidateEntireInstructionCache
+14014f88 T svcMapProcessMemoryEx
+14014f90 T svcUnmapProcessMemoryEx
+14014f98 T svcControlMemoryEx
+14014fb8 T svcControlService
+14014fc0 T svcCopyHandle
+14014fd4 T svcTranslateHandle
+14014fe8 0000000c T __sync_init
+14014ff4 000000ac T LightLock_Lock
+140150a0 00000024 T RecursiveLock_Init
+140150c4 00000030 T RecursiveLock_Lock
+140150f4 00000054 T RecursiveLock_Unlock
+14015148 00000040 T LightEvent_Init
+14015188 000000c8 T LightEvent_Signal
+14015250 000000a0 T LightEvent_Wait
+140152f0 00000054 T osGetTimeRef
+14015344 000000ec T osGetTime
+14015430 0000012c T srvInit
+1401555c 0000000c T srvSetBlockingPolicy
+14015568 00000060 T srvEnableNotification
+140155c8 00000090 T srvRegisterService
+14015658 00000058 T srvUnregisterService
+140156b0 000000a0 T srvGetServiceHandleDirect
+14015750 00000038 T srvGetServiceHandle
+14015788 00000034 T srvSubscribe
+140157bc 00000034 T srvUnsubscribe
+140157f0 00000060 T srvReceiveNotification
+14015850 00000038 T srvPublishToSubscriber
+14015888 00000090 T srvIsServiceRegistered
+14015918 000000b4 t mappableFindAddressWithin
+140159cc 00000028 T mappableInit
+140159f4 00000080 T mappableAlloc
+14015a74 00000004 T mappableFree
+14015a78 00000074 T pmAppInit
+14015aec 000000a4 T cfguInit
+14015b90 0000003c T cfguExit
+14015bcc 0000004c T CFG_GetConfigInfoBlk8
+14015c18 0000004c T CFG_SetConfigInfoBlk4
+14015c64 00000030 T CFG_UpdateConfigSavegame
+14015c94 0000018c T hidInit
+14015e20 000000e8 T hidExit
+14015f08 0000003c T hidSetRepeatParameters
+14015f44 000002a4 T hidScanInput
+140161e8 00000010 T hidKeysHeld
+140161f8 00000010 T hidKeysDown
+14016208 00000018 T hidKeysDownRepeat
+14016220 00000018 T hidTouchRead
+14016238 00000074 T mcuHwcInit
+140162ac 0000003c T mcuHwcExit
+140162e8 0000000c T mcuHwcGetSessionHandle
+140162f4 00000048 T MCUHWC_ReadRegister
+1401633c 00000048 T MCUHWC_WriteRegister
+14016384 00000038 T MCUHWC_GetFwVerHigh
+140163bc 00000038 T MCUHWC_GetFwVerLow
+140163f4 0000008c T acInit
+14016480 0000003c T acExit
+140164bc 00000040 T ACU_CreateDefaultConfig
+140164fc 00000058 T ACU_ConnectAsync
+14016554 00000050 T ACU_SetAllowApType
+140165a4 00000050 T ACU_SetNetworkArea
+140165f4 00000058 T ACU_SetRequestEulaVersion
+1401664c 00000040 T ACU_GetSSID
+1401668c 0000000c T cdcChkGetSessionHandle
+14016698 0000004c T CDCCHK_WriteRegisters2
+140166e4 00000158 T aptSendCommand
+1401683c 00000020 T APT_HardwareResetAsync
+1401685c 00000074 T ndmuInit
+140168d0 00000048 T ndmuExit
+14016918 0000003c T NDMU_EnterExclusiveState
+14016954 00000034 T NDMU_LeaveExclusiveState
+14016988 00000034 T NDMU_LockState
+140169bc 00000034 T NDMU_UnlockState
+140169f0 00000074 T nwmExtInit
+14016a64 0000003c T nwmExtExit
+14016aa0 0000003c T NWMEXT_ControlWirelessEnabled
+14016adc 00000074 T pmDbgInit
+14016b50 0000000c T pmDbgGetSessionHandle
+14016b5c 00000038 T PMDBG_RunQueuedProcess
+14016b94 0000000c T srvPmGetSessionHandle
+14016ba0 00000074 T gspLcdInit
+14016c14 0000003c T gspLcdExit
+14016c50 00000038 T GSPLCD_SetBrightnessRaw
+14016c88 00000074 T ptmSysmInit
+14016cfc 0000003c T ptmSysmExit
+14016d38 0000003c T PTMSYSM_ReplyToSleepQuery
+14016d74 0000003c T PTMSYSM_NotifySleepPreparationComplete
+14016db0 0000003c T PTMSYSM_SetUserTime
+14016dec 0000003c T PTMSYSM_SetRtcTime
+14016e28 00000074 T ptmSetsInit
+14016e9c 0000003c T ptmSetsExit
+14016ed8 0000003c T PTMSETS_SetSystemTime
+14016f14 000000cc T fsInit
+14016fe0 00000084 T fsMakePath
+14017064 000000cc T FSUSER_OpenFile
+14017130 000000d4 T FSUSER_OpenFileDirectly
+14017204 000000bc T FSUSER_DeleteFile
+140172c0 000000d4 T FSUSER_CreateFile
+14017394 000000c4 T FSUSER_CreateDirectory
+14017458 000000b4 T FSUSER_OpenDirectory
+1401750c 00000094 T FSUSER_OpenArchive
+140175a0 0000008c T FSUSER_CloseArchive
+1401762c 00000058 T FSUSER_GetSdmcSpeedInfo
+14017684 00000058 T FSUSER_GetNandSpeedInfo
+140176dc 00000064 T FSUSER_CardSlotPowerOn
+14017740 00000064 T FSUSER_CardSlotPowerOff
+140177a4 00000064 T FSUSER_CardSlotGetCardIFPowerStatus
+14017808 00000048 T FSUSER_SetPriority
+14017850 00000058 T FSFILE_Read
+140178a8 00000060 T FSFILE_Write
+14017908 00000038 T FSFILE_GetSize
+14017940 00000028 T FSFILE_SetSize
+14017968 0000003c T FSFILE_Close
+140179a4 0000003c T FSDIR_Close
+140179e0 0000003c T _net_convert_error
+14017a1c 000000c0 T utf8_to_utf16
+14017adc 0000013c T decode_utf8
+14017c18 T svcControlMemory
+14017c38 T svcQueryMemory
+14017c68 T svcExitProcess
+14017c70 T svcCreateThread
+14017c90 T svcExitThread
+14017c98 T svcSleepThread
+14017ca0 T svcGetThreadPriority
+14017cb4 T svcReleaseMutex
+14017cbc T svcCreateEvent
+14017cd0 T svcSignalEvent
+14017cd8 T svcClearEvent
+14017ce0 T svcCreateMemoryBlock
+14017cf8 T svcMapMemoryBlock
+14017d00 T svcUnmapMemoryBlock
+14017d08 T svcCreateAddressArbiter
+14017d1c T svcArbitrateAddressNoTimeout
+14017d24 T svcCloseHandle
+14017d2c T svcWaitSynchronization
+14017d34 T svcWaitSynchronizationN
+14017d5c T svcDuplicateHandle
+14017d70 T svcGetSystemTick
+14017d78 T svcGetHandleInfo
+14017d90 T svcGetSystemInfo
+14017da8 T svcGetProcessInfo
+14017dc0 T svcConnectToPort
+14017dd4 T svcSendSyncRequest
+14017ddc T svcOpenProcess
+14017df0 T svcOpenThread
+14017e04 T svcBreak
+14017e0c T svcCreatePort
+14017e2c T svcAcceptSession
+14017e44 T svcReplyAndReceive
+14017e5c T svcFlushProcessDataCache
+14017e64 T svcDebugActiveProcess
+14017e78 T svcBreakDebugProcess
+14017e80 T svcTerminateDebugProcess
+14017e88 T svcGetProcessDebugEvent
+14017e90 T svcContinueDebugEvent
+14017e98 T svcGetProcessList
+14017eac T svcGetDebugThreadContext
+14017eb4 T svcSetDebugThreadContext
+14017ebc T svcQueryDebugProcessMemory
+14017ee0 T svcReadProcessMemory
+14017ee8 T svcWriteProcessMemory
+14017ef0 T svcGetDebugThreadParam
+14017f10 T svcKernelSetState
+14017f18 T svcQueryProcessMemory
+14017f3c 00000084 W envGetHandle
+14017fc0 00000160 T irrstInit
+14018120 000000cc T irrstExit
+140181ec 000000b4 T irrstScanInput
+140182a0 00000024 T irrstKeysHeld
+140182c4 00000054 T encode_utf16
+14018318 00000030 T __syscall_getreent
+14018348 000003ec T powf
+14018734 00000024 t with_errnof
+14018758 00000018 t xflowf
+14018770 0000000c T __math_uflowf
+1401877c 0000000c T __math_may_uflowf
+14018788 0000000c T __math_oflowf
+14018794 00000030 T __math_divzerof
+140187c4 0000001c T __math_invalidf
+140187e0 00000040 T __aeabi_d2ulz
+140187e0 00000040 T __fixunsdfdi
+14018820 00000120 T __udivmoddi4
+14018940 00000974 T qsort
+140192b4 00000070 T strcat
+14019324 00000130 T strchr
+14019454 000000d8 T memcmp
+1401952c 00000150 T memmove
+1401967c 000000f4 T memset
+14019770 00000090 T strlen
+14019800 000000e4 T strncmp
+140198e4 000000c4 T strncpy
+140199a8 00000048 T strnlen
+140199f0 000000f0 T strcpy
+14019ae0 0000011c T memcpy
+14019bfc 00000084 T __libc_init_array
+14019c80 0000003c T __libc_fini_array
+14019cbc 00000024 T strchrnul
+14019ce0 0000000c T __errno
+14019cec 0000002c T __getreent
+14019d18 T _fini
+1401a280 R osdata_xml
+1401a4f5 R osdata_xml_end
+1401a4f8 R osdata_cfw_version_template_xml
+1401a5e9 R osdata_cfw_version_template_xml_end
+1401a5ec R osdata_memory_template_xml
+1401a911 R osdata_memory_template_xml_end
+1401a914 R target_xml
+1401affb R target_xml_end
+1401affc R config_template_ini
+1401ca75 R config_template_ini_end
+1401ca78 00000005 r formatSizes.0
+1401ca80 00000a00 r font
+1401d748 00000014 r exceptionTypes.0
+1401d75c 0000001c r types.1
+1401d778 00000044 r registerNames.2
+1401d7ec 00000014 r hidOrigCode.2
+1401d800 00000008 r hidOrigRegisterAndValue.3
+1401d808 00000008 r irOrigCppFlagCode.12
+1401d810 00000008 r irOrigWaitSyncCodeOld.13
+1401d818 0000000c r irOrigWaitSyncCode.14
+1401d914 0000000c r CSWTCH.17
+1401d920 00000010 r pinOptionToDigits.0
+1401d930 00000080 r keys.1
+1401da04 0000001c r values.0
+1401da20 00000068 r notifications
+1401da88 00000010 r services
+1401e100 00000050 r pow10.0
+1401e150 0000000c r daysInMonth.1
+1401e1b0 00000030 r states.2
+1401e2fc 0000000c r processExitReplies.0
+1401e308 00000010 r threadExitRepliesSigs.1
+1401e448 0000009c r gdbQueryHandlers
+1401e6f0 000000b0 r gdbCommandHandlers
+1401e7a8 00000003 r kinds.0
+1401e88c 00000040 r gdbTioCommandHandlers
+1401e908 00000038 r gdbVerboseCommandHandlers
+1401e952 0000000a r footer.0
+1401e95c 0000004f r item.1
+1401e9ab 0000001a r header.2
+1401eaac 00000008 r typeEMapping
+1401f568 00000010 r defaultFilter.0
+1401f9b8 00000b58 r blackbody_color
+14020510 R hidCodePatchFunc
+14020550 r skip_touch_cp_cpy
+140205c4 R irCodePatchFunc
+140205cc r i2c_readdeviceraw_addr
+140205d0 r redirected_input_addr
+140205d4 r skip_vars
+140205d8 r ir_check_i2c
+140206e0 0000004d r _net_error_code_map
+14020738 00000148 R __exp2f_data
+14020880 00000128 R __powf_log2_data
+140209a8 R __tdata_align
+140209ac r __EH_FRAME_BEGIN__
+140209ac R __exidx_end
+140209ac R __exidx_start
+14021000 00000014 d syncHookCode.8
+14021014 00000014 d irHook.9
+14021028 00000014 d irOrigReadingCode.15
+1402103c 00000004 d irData
+14021040 00000020 d hidData
+14021060 00000038 d s_blPwmData
+14021098 00000104 D rosalinaMenu
+1402119c 00000004 d socContextAddr
+140211a0 00000030 D remoteCommandHandlers
+140211d0 00000018 D xferOsDataCommandHandlers
+140211e8 00000010 D xferCommandHandlers
+140211f8 00000008 D cheatTitleInfo
+14021200 00000104 D debuggerMenu
+14021304 00000104 D miscellaneousMenu
+14021408 00000104 D N3DSMenu
+1402150c 00000104 D screenFiltersMenu
+14021610 00000104 D sysconfigMenu
+14021714 00000004 d kCount
+14021718 00000004 d kInterval
+1402171c 00000004 d kDelay
+14021720 00000004 D _impure_ptr
+14021728 00000120 D _impure_data
+14021848 d __frame_dummy_init_array_entry
+14021848 D __init_array_start
+14021848 B __preinit_array_end
+14021848 B __preinit_array_start
+14021848 D __tdata_lma
+14021848 D __tdata_lma_end
+1402184c d __do_global_dtors_aux_fini_array_entry
+1402184c D __fini_array_start
+1402184c D __init_array_end
+14021850 D __bss_start__
+14021850 D __fini_array_end
+14021850 b completed.1
+14021854 b object.0
+1402186c 0000000c b lock
+14021878 00000004 b framebufferCache
+1402187c 00000004 b framebufferCacheSize
+14021880 00000004 b gpuSavedFillColor
+14021884 00000004 b gpuSavedFramebufferStride
+14021888 00000004 b gpuSavedFramebufferFormat
+1402188c 00000004 b gpuSavedFramebufferAddr2
+14021890 00000004 b gpuSavedFramebufferAddr1
+14021894 00000101 b staticBuf
+14021995 00000101 b userString
+14021a98 00000d00 b errDispThreadStack
+14022798 00000010 b errDispThread
+140227a8 00000004 b hidPatchJumpLoc.0
+140227ac 00000008 b hidRegPatchOffsets.1
+140227b4 00000001 b patchPrepared.4
+140227b8 00000004 b cppFlagLoc.5
+140227bc 00000004 b syncLoc.6
+140227c0 00000004 b hookLoc.7
+140227c4 00000004 b origCppFlag.10
+140227c8 00000004 b origIrSync.11
+140227cc 00000001 b patchPrepared.16
+140227cd 00000001 b irPatched.17
+140227ce 00000001 b hidPatched.18
+140227d0 00000004 B inputRedirectionStartResult
+140227d8 00004000 b inputRedirectionThreadStack
+140267d8 00000010 b inputRedirectionThread
+140267e8 00000004 B inputRedirectionThreadStartedEvent
+140267ec 00000001 B inputRedirectionEnabled
+140267ed 00000001 b calibRead.0
+140267f0 00000004 B preTerminationEvent
+140267f4 00000001 B preTerminationRequested
+140267f5 00000001 B menuShouldExit
+140267f6 00000001 B isN3DS
+140267f8 00000004 b menuRefCount
+140267fc 00000001 b batteryTemperature
+14026800 00000004 b batteryVoltage
+14026804 00000004 b batteryPercentage
+14026808 00003000 b menuThreadStack
+14029808 00000010 b menuThread
+14029818 00000004 B mcuFwVersion
+1402981c 00000001 B isHidInitialized
+14029820 00000004 B menuCombo
+14029828 00000008 b timeSpentWritingScreenshot
+14029830 00000008 b timeSpentConvertingScreenshot
+14029838 00000001 B miniSocEnabled
+14029839 00000001 b exclusiveStateEntered
+1402983c 00000004 b miniSocMemHandle
+14029840 00000004 b miniSocHandle
+14029844 00000004 B miniSocRefCount
+14029848 00001000 b taskRunnerThreadStack
+1402a848 00000010 b taskRunnerThread
+1402a858 00000058 B g_taskRunner
+1402a8b0 00000001 b lockInitialized.0
+1402a8b4 00000024 b manager
+1402a8d8 0000000c B watchpointManagerLock
+1402a8e4 00000001 b ReadWriteBuffer8
+1402a8e6 00000002 b ReadWriteBuffer16
+1402a8e8 00000004 b ReadWriteBuffer32
+1402a8ec 00000040 B failureReason
+1402a930 00000008 B cheatRngState
+1402a938 00000001 B cheatCount
+1402a93c 00000028 B cheat_state
+1402a964 00001000 B cheatPage
+1402b964 00008000 B cheatBuffer
+14033964 00001000 B cheats
+14034964 00000004 B nextApplicationGdbCtx
+14034968 0000ab00 B gdbServer
+1403f468 00003000 b debuggerDebugThreadStack
+14042468 00005000 b debuggerSocketThreadStack
+14047468 00000010 b debuggerDebugThread
+14047478 00000010 b debuggerSocketThread
+14047488 00000004 B lastNtpTzOffset
+14047490 00000008 b L2CacheEnabled
+14047498 00000008 b higherClkRate
+140474a0 00000008 b clkRate
+140474a8 00000081 b clkRateBuf
+14047529 00000001 B ascii
+14047530 00000800 b infosPrev
+14047d30 00000800 b infos
+14048530 00000010 B bottomScreenFilter
+14048540 00000010 B topScreenFilter
+14048550 00000001 B isConnectionForced
+14048554 00000004 b arbiter
+14048558 00000004 b srvRefCount
+1404855c 00000004 b srvHandle
+14048560 00000004 b currentAddr
+14048564 00000004 b maxAddr
+14048568 00000004 b minAddr
+1404856c 00000004 b pmAppRefcount
+14048570 00000004 b pmAppHandle
+14048574 00000004 b cfguRefCount
+14048578 00000004 b cfguHandle
+1404857c 00000001 b usingIrrst
+14048580 00000004 b hidRefCount
+14048584 00000006 b gRate
+1404858c 00000006 b aVec
+14048594 00000004 b cPos
+14048598 00000004 b tPos
+1404859c 00000004 b kRepeat
+140485a0 00000004 b kUp
+140485a4 00000004 b kDown
+140485a8 00000004 b kHeld
+140485ac 00000004 b kOld
+140485b0 00000004 B hidSharedMem
+140485b4 00000014 B hidEvents
+140485c8 00000004 B hidMemHandle
+140485cc 00000004 B hidHandle
+140485d0 00000004 b mcuHwcRefCount
+140485d4 00000004 b mcuHwcHandle
+140485d8 00000004 b acRefCount
+140485dc 00000004 b acHandle
+140485e0 00000004 b cdcChkHandle
+140485e4 00000004 b serviceName.6
+140485e8 00000004 b aptLockHandle
+140485ec 00000004 b ndmuRefCount
+140485f0 00000004 B ndmuHandle
+140485f4 00000004 b nwmExtRefCount
+140485f8 00000004 B nwmExtHandle
+140485fc 00000004 b pmDbgRefcount
+14048600 00000004 b pmDbgHandle
+14048604 00000004 b srvPmHandle
+14048608 00000004 b gspLcdRefCount
+1404860c 00000004 B gspLcdHandle
+14048610 00000004 b ptmSysmRefCount
+14048614 00000004 b ptmSysmHandle
+14048618 00000004 b ptmSetsRefCount
+1404861c 00000004 b ptmSetsHandle
+14048620 00000080 b fsExemptArchives
+140486a0 00000004 b fsuRefCount
+140486a4 00000004 b fsuHandle
+140486a8 00000004 B __system_argv
+140486ac 00000004 B __system_argc
+140486b0 00000004 b irrstRefCount
+140486b4 00000004 b csPos
+140486b8 00000004 b kHeld
+140486bc 00000004 B irrstSharedMem
+140486c0 00000004 B irrstEvent
+140486c4 00000004 B irrstMemHandle
+140486c8 00000004 B irrstHandle
+140486d0 00000168 B __sf
+14048838 B __bss_end__
+14048838 A __end__
+14048838 B __tls_end
+14048838 B __tls_start

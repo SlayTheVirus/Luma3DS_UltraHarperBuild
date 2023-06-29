@@ -1,0 +1,231 @@
+70000000 T __start__
+70000000 T _start
+70000030 t start
+7000004c t startPhys
+7000006c t _bindSGI0Hook
+70000078 T _init
+700000a0 t _die
+700000a4 t _die_loop
+700000ac t _commonHandler
+700000e0 t _try_lock
+700001a0 t _L2C_sync
+700001ac t _no_L2C
+700001dc T FIQHandler
+70000214 t _exc_is_fatal_FIQ
+70000220 T undefinedInstructionHandler
+70000278 t _undefinedInstructionNormalHandler
+700002b0 t _exc_is_fatal__undefinedInstructionNormal
+700002bc T prefetchAbortHandler
+700002e8 t _prefetchAbortNormalHandler
+70000320 t _exc_is_fatal__prefetchAbortNormal
+7000032c T dataAbortHandler
+7000035c t _dataAbortNormalHandler
+70000394 t _exc_is_fatal__dataAbortNormal
+700003e0 T svcHandler
+70000420 t _handled_svc
+70000444 t _fallback
+70000458 t _fallback_end
+7000047c t _no_signal_return
+70000484 t _svc_finished
+70000490 t _svc_return
+70000498 t _postprocess_svc
+700004c8 t _call_svc_debugged
+700004ec t _signal_svc_end
+70000514 T convertVAToPA
+70000530 t _convertVAToPA_read_check
+70000538 t _convertVAToPA_write_check
+7000053c t _convertVAToPA_end_check
+70000554 T flushEntireDataCache
+70000564 T invalidateEntireInstructionCache
+70000574 T KObjectMutex__Acquire
+700005a0 T KObjectMutex__Release
+700005c4 T safecpy
+700005d0 t _safecpy_loop
+700005ec t _safecpy_loop_end
+700005f4 t _safecpy_end
+70000608 T Backdoor
+70000630 T Break
+70000640 T CustomBackdoor
+7000065c T GetHandleInfoHookWrapper
+70000670 T GetSystemInfoHookWrapper
+70000684 T GetProcessInfoHookWrapper
+70000698 T GetThreadInfoHookWrapper
+700006ac T ConnectToPortHookWrapper
+700006c0 T CopyHandleWrapper
+700006d4 T TranslateHandleWrapper
+700006e8 T ControlMemoryHookWrapper
+70000708 T ControlMemoryEx
+70000738 T CreateThreadHookWrapper
+70000768 00000390 T strcmp
+70000af0 t __do_global_dtors_aux
+70000b30 t frame_dummy
+70000b5c 00000038 T enableMonitorModeDebugging
+70000b94 00000074 T disableWatchpoint
+70000c08 000000e8 T setWatchpointWithContextId
+70000cf0 00000154 T isExceptionFatal
+70000e44 0000007c T isDataAbortExceptionRangeControlled
+70000ec0 000001a4 T fatalExceptionHandlersMain
+70001064 00000094 t SessionInfo_FindClosestSlot
+700010f8 000000a4 T SessionInfo_Lookup
+7000119c 000000e4 T SessionInfo_FindFirst
+70001280 000001a8 T SessionInfo_Add
+70001428 000000f0 T SessionInfo_Remove
+70001518 00000024 t KSession__dtor_hook
+7000153c 000001ec T doLangEmu
+70001728 000000a8 T doErrfThrowHook
+700017d0 00000150 T relocateAndSetupMMU
+70001920 0000005c T bindSGI0Hook
+7000197c 00000134 T configHook
+70001ab0 00000c24 T main
+700026d4 00000034 t BreakHook
+70002708 0000016c T buildAlteredSvcTable
+70002874 0000005c T signalSvcEntry
+700028d0 0000005c T signalSvcReturn
+7000292c 00000068 T postprocessSvc
+70002994 00000028 T executeFunctionOnCores
+700029bc 00000070 T KThread__DebugReschedule
+70002a2c 00000078 T rosalinaRescheduleThread
+70002aa4 00000100 T rosalinaThreadLockPredicate
+70002ba4 00000254 T rosalinaLockThreads
+70002df8 00000078 T rosalinaUnlockThreads
+70002e70 00000100 T ConnectToPortHook
+70002f70 00000058 T ControlMemoryHook
+70002fc8 000002c0 T ControlService
+70003288 000001c8 T CopyHandle
+70003450 0000008c T CreateThreadHook
+700034dc 000001a4 T GetHandleInfoHook
+70003680 00000234 T GetProcessInfoHook
+700038b4 000004f8 T GetSystemInfoHook
+70003dac 000000a8 T GetThreadInfoHook
+70003e54 00000090 T shouldSignalSyscallDebugEvent
+70003ee4 000001f0 T SetSyscallDebugEventMask
+700040d4 000002b0 T KernelSetStateHook
+70004384 000000b8 T MapProcessMemoryEx
+7000443c 00000584 T SendSyncRequestHook
+700049c0 00000008 T SetGpuProt
+700049c8 00000024 T SetWifiEnabled
+700049ec 00000134 T TranslateHandle
+70004b20 0000006c T UnmapProcessMemoryEx
+70004b8c 00000150 T memmove
+70004cdc 000000f4 T memset
+70004dd0 00000090 T strlen
+70004e60 000000e4 T strncmp
+70004f44 000000c4 T strncpy
+70005008 0000011c T memcpy
+70005124 00000084 T __libc_init_array
+700051a8 T _fini
+70005244 R safecpy_sz
+70005248 d __frame_dummy_init_array_entry
+70005248 D __init_array_start
+70005248 D __preinit_array_end
+70005248 D __preinit_array_start
+7000524c d __do_global_dtors_aux_fini_array_entry
+7000524c D __init_array_end
+70005250 A __exidx_end
+70005250 A __exidx_start
+70005250 000000b0 D kExtParameters
+70005300 d _customInterruptEventObj
+70005304 D customInterruptEvent
+70005400 A __bss_start__
+70005400 b _regs
+7000545c b _fatalExceptionOccured
+70005460 b completed.1
+70005464 b object.0
+7000547c 00000004 B dbgParamContextId
+70005480 00000004 B dbgParamWCR
+70005484 00000004 B dbgParamDVA
+70005488 00000004 B dbgParamWatchpointId
+7000548c 00000008 B dbgParamsLock
+70005494 00000004 B flagsKProcess
+70005498 00000004 B debugOffsetKProcess
+7000549c 00000004 B handleTableOffsetKProcess
+700054a0 00000004 B codeSetOffsetKProcess
+700054a4 00000004 B hwInfoOffsetKProcess
+700054a8 00000004 B pidOffsetKProcess
+700054ac 00000001 B hasStartedRosalinaNetworkFuncsOnce
+700054b0 00000004 B rosalinaState
+700054b4 00000004 B stolenSystemMemRegionSize
+700054b8 00000004 B kextBasePa
+700054c0 00000080 B cfwInfo
+70005540 00000004 B coreBarrier
+70005544 00000004 B mcuReboot
+70005548 00000004 B initFPU
+7000554c 00000004 B interruptManager
+70005550 00000004 B InterruptManager__MapInterrupt
+70005554 00000004 B nbSection0Modules
+70005558 00000020 B originalHandlers
+70005578 00000004 B coreCtxs
+7000557c 00000018 B fcramLayout
+70005594 00000004 B kernelVersion
+70005598 00000004 B configPage
+7000559c 00000004 B isDevUnit
+700055a0 00000004 B kernelUsrCopyFuncsEnd
+700055a4 00000004 B kernelUsrCopyFuncsStart
+700055a8 00000010 B L1MMUTableAddrs
+700055b8 00000004 B TTBCR
+700055bc 00000004 B exceptionStackTop
+700055c0 00000001 B isN3DS
+700055c4 00000004 B SignalDebugEvent
+700055c8 00000004 B officialPostProcessSvc
+700055cc 00000004 B kernelpanic
+700055d0 00000004 B svcFallbackHandler
+700055d4 00000004 B kernelToUsrStrncpy
+700055d8 00000004 B kernelToUsrMemcpy32
+700055dc 00000004 B kernelToUsrMemcpy8
+700055e0 00000004 B usrToKernelStrncpy
+700055e4 00000004 B usrToKernelMemcpy32
+700055e8 00000004 B usrToKernelMemcpy8
+700055ec 00000004 B invalidateInstructionCacheRange
+700055f0 00000004 B flushDataCacheRange
+700055f4 00000004 B KernelSetState
+700055f8 00000004 B UnmapProcessMemory
+700055fc 00000004 B DebugActiveProcess
+70005600 00000004 B GetProcessId
+70005604 00000004 B OpenProcess
+70005608 00000004 B SendSyncRequest
+7000560c 00000004 B ConnectToPort
+70005610 00000004 B GetThreadInfo
+70005614 00000004 B GetProcessInfo
+70005618 00000004 B GetSystemInfo
+7000561c 00000004 B GetHandleInfo
+70005620 00000004 B CloseHandle
+70005624 00000004 B SleepThread
+70005628 00000004 B CreateThread
+7000562c 00000004 B ControlMemory
+70005630 00000004 B KScheduler__AttemptSwitchingThreadContext
+70005634 00000004 B KScheduler__AdjustThread
+70005638 00000004 B KObjectMutex__ErrorOccured
+7000563c 00000004 B KObjectMutex__WaitAndAcquire
+70005640 00000004 B KEvent__Clear
+70005644 00000004 B KProcessHwInfo__UnmapProcessMemory
+70005648 00000004 B KProcessHwInfo__MapProcessMemory
+7000564c 00000004 B KProcessHandleTable__CreateHandle
+70005650 00000004 B WaitSynchronization1
+70005654 00000004 B KSynchronizationObject__Signal
+70005658 00000004 B KProcessHandleTable__ToKAutoObject
+7000565c 00000004 B KProcessHandleTable__ToKThread
+70005660 00000004 B KProcessHandleTable__ToKProcess
+70005664 00000004 B KAutoObject__AddReference
+70005668 00000004 B KRecursiveLock__Unlock
+7000566c 00000004 B KRecursiveLock__Lock
+70005670 00000004 B synchronizationMutex
+70005674 00000004 B threadList
+70005678 00000004 B criticalSectionLock
+7000567c 00000004 b KSession__dtor_orig
+70005680 00000040 b customSessionVtable
+700056c0 00000400 B processLangemuAttributes
+70005ac0 00000008 B processLangemuLock
+70005ac8 00000008 b sessionInfosLock
+70005ad0 00000004 b nbActiveSessions
+70005ad4 00001590 b sessionInfos
+70007400 00000400 b g_L2Table
+70007800 00000400 B alteredSvcTable
+70007c00 000001f8 B officialSVCs
+70007df8 00000008 b syscallDebugEventMaskLock.0
+70007e00 00000001 B svcSignalingEnabled
+70007e04 00000060 b masks
+70007e64 0000000c b maskedPids
+70007e70 00000004 b nbEnabled
+70007e74 B SGI0Handler
+70008000 A __bss_end__
+70008000 A __end__
